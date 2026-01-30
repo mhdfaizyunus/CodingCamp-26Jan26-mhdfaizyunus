@@ -1,21 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio Faiz</title>
 
     <!-- CSS External -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-    <header></header>
+    <header class="main-header p-4 flex justify-between items-center">
+        <!-- logo -->
+        <div class="logo"></div>
 
-    <main></main>
+        <!-- navigasi menu-->
+        <nav class="flex gap-4">
+    <a class="px-4 py-2 text-sm font-medium border-2 border-black rounded-lg hover:bg-black hover:text-white transition-all duration-300 ease-in-out shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px]" 
+       href="#home-page">
+       Home
+    </a>
 
-    <footer></footer>
+    <a class="px-4 py-2 text-sm font-medium border-2 border-black rounded-lg hover:bg-black hover:text-white transition-all duration-300 ease-in-out shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px]" 
+       href="#our-profile-page">
+       Our Profile
+    </a>
+
+    <a class="px-4 py-2 text-sm font-medium border-2 border-black rounded-lg hover:bg-black hover:text-white transition-all duration-300 ease-in-out shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px]" 
+       href="#portofolio-page">
+       Portofolio
+    </a>
+
+    <a class="px-4 py-2 text-sm font-medium border-2 border-black rounded-lg hover:bg-black hover:text-white transition-all duration-300 ease-in-out shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px]" 
+       href="#message-us-page">
+       Message Us
+    </a>
+</nav>
+    </header>
+
+    <hr />
+
+    <main>
+        <!-- home page -->
+        <section id="home-page"
+            class="min-h-[500px] text-center content-center flex flex-col justify-center gap-4 p-10">
+            <h1 class="text-2xl font-semibold" id="welcome-speech">
+                Welcome To Our Website
+            </h1>
+            <p class="text-gray-700">
+                We are glad to have you here. Please enjoy and explore our service and
+                offerings
+            </p>
+        </section>
+
+        <hr class="border-black" />
+
+        <!-- our profile page -->
+        <section id="our-profile-page" class="py-16 px-10 bg-gray-50">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold mb-10 border-l-4 border-yellow-400 pl-4">Our Headquarter</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div
+                        class="group bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 text-center">
+                        <div
+                            class="w-24 h-24 mx-auto mb-4 bg-yellow-100 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <span class="text-3xl">🏢</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Jakarta</h3>
+                        <p class="text-gray-500 text-sm italic">Pusat Inovasi & Teknologi Utama</p>
+                    </div>
+
+                    <div
+                        class="group bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 text-center">
+                        <div
+                            class="w-24 h-24 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <span class="text-3xl">👨‍💻</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Bandung</h3>
+                        <p class="text-gray-500 text-sm italic">Hub Kreatif & Development</p>
+                    </div>
+
+                    <div
+                        class="group bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 text-center">
+                        <div
+                            class="w-24 h-24 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <span class="text-3xl">🚀</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Surabaya</h3>
+                        <p class="text-gray-500 text-sm italic">Operasional & Logistik Strategis</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-black" />
+
+        <!-- portofolio page -->
+
+        <section id="portofolio-page" class="py-16 px-10">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold mb-10 border-l-4 border-yellow-400 pl-4">Portofolio</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div
+                        class="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div
+                            class="h-48 bg-gray-100 flex items-center justify-center border-b border-gray-100 group-hover:bg-yellow-50 transition-colors">
+                            <img src="img/web-development.jpg" alt="Web Development Project" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-xl mb-2">Frontend System</h3>
+                            <p class="text-gray-600 text-sm">Membangun landing page responsif menggunakan HTML, CSS, dan
+                                Tailwind.</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div
+                            class="h-48 bg-gray-100 flex items-center justify-center border-b border-gray-100 group-hover:bg-blue-50 transition-colors">
+                            <img src="img/backend-developer.jpg" alt="Backend System" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-xl mb-2">Backend System</h3>
+                            <p class="text-gray-600 text-sm">Integrasi API dan manajemen database menggunakan MySQL dan
+                                PHP.</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div
+                            class="h-48 bg-gray-100 flex items-center justify-center border-b border-gray-100 group-hover:bg-green-50 transition-colors">
+                            <img src="img/mobile-app.jpg" alt="Mobile App Design" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-xl mb-2">Mobile App Design</h3>
+                            <p class="text-gray-600 text-sm">UI/UX Design untuk aplikasi e-commerce menggunakan Figma.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-black" />
+
+        <!-- message us page -->
+        <section id="message-us-page" class="p-10">
+            <h2 class="text-xl font-bold mb-6">Message Us</h2>
+            <div class="flex flex-wrap gap-10">
+                <form id="messageForm" class="flex-1 max-w-md space-y-4">
+                    <div class="flex items-center gap-4">
+                        <label class="w-32">Nama</label>
+                        <input type="text" id="input-nama" class="border border-black flex-1 p-1 focus:ring-2 focus:ring-yellow-400 focus:outline-none" placeholder="Nama" />
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <label class="w-32">Tanggal Lahir</label>
+                        <input type="date" id="input-tanggal" class="border border-black flex-1 p-1" />
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <label class="w-32">Jenis Kelamin</label>
+                        <div class="flex gap-4 flex-1">
+                            <label><input type="radio" name="gender" value="Laki-laki" />
+                                Laki-Laki</label>
+                            <label><input type="radio" name="gender" value="Perempuan" />
+                                Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <label class="w-32 pt-1">Pesan</label>
+                        <textarea id="input-pesan" class="border border-black flex-1 p-1 h-24"
+                            placeholder="Pesan"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-gray-200 border border-black py-1 mt-4 hover:bg-gray-300">
+                        Submit
+                    </button>
+                </form>
+
+                <div class="flex-1 border border-black p-4 text-xs space-y-2 h-fit min-w-[300px]">
+                    <p>
+                        <strong>Current time :</strong> <span id="current-time">-</span>
+                    </p>
+                    <div class="pt-4 space-y-1" id="output-data">
+                        <p class="italic text-gray-400 text-center">
+                            Belum ada data. Silakan isi form dan klik submit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="text-center p-4 border-t border-black mt-10">
+            &copy; 2024 Faiz Company. All rights reserved.
+        </div>
+    </footer>
 
     <!-- JS External -->
     <script src="js/script.js"></script>
